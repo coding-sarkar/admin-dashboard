@@ -57,7 +57,25 @@ table {
 
 
 
-/* My Styles */
+/* My Custom Styles */
+
 .container {
-  
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+  "sidebar header"
+  "sidebar header"
+  "sidebar main"
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+main {
+  grid-area: main;
 }
