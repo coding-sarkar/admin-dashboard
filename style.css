@@ -64,7 +64,6 @@ table {
   grid-template-columns: 1fr 4fr;
   grid-template-areas:
   "sidebar header"
-  "sidebar header"
   "sidebar main"
 }
 
