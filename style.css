@@ -78,3 +78,17 @@ table {
 main {
   grid-area: main;
 }
+
+.header .top-header {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+}
+
+.header .bottom-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.user-intro {
+  display: flex;
+}
