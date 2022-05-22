@@ -94,3 +94,7 @@ main {
 .user-intro {
   display: flex;
 }
+
+.trending .card {
+  display: flex;
+}
