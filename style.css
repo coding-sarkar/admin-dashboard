@@ -98,3 +98,16 @@ main {
 .trending .card {
   display: flex;
 }
+
+.projects .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects .card {
+  display: grid;
+}
+
+.card .icons {
+  justify-self: end;
+}
