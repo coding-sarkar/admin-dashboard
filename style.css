@@ -77,6 +77,8 @@ table {
 
 main {
   grid-area: main;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .header .top-header {
