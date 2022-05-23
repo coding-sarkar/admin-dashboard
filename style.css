@@ -190,7 +190,7 @@ table {
   justify-items: start;
 }
 
-.top-header > img {
+.top-header>img {
   margin-right: 20px;
 }
 
@@ -233,7 +233,7 @@ table {
   margin-bottom: 10px;
 }
 
-.bottom-header button{
+.bottom-header button {
   box-sizing: border-box;
   border: none;
   background-color: #1c92d4;
@@ -290,12 +290,31 @@ main {
   grid-area: main;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "project anounce"
+    "project ..."
+    "project trend";
+  column-gap: 20px;
+  row-gap: 10px;
+  align-items: start;
   padding: 30px 30px 75px 15px;
   background-color: #e2e8f0;
-  column-gap: 20px;
 }
 
-main h2, main h3 {
+.projects {
+  grid-area: project;
+}
+
+.anouncements {
+  grid-area: anounce;
+}
+
+.trending {
+  grid-area: trend;
+}
+
+main h2,
+main h3 {
   font-weight: bold;
 }
 
@@ -307,7 +326,7 @@ main h2 {
 .projects .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px
+  gap: 30px
 }
 
 .projects .card {
@@ -352,7 +371,6 @@ main h2 {
 .anouncements p {
   color: #919191;
   font-size: 0.8rem;
-  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -365,6 +383,35 @@ main h2 {
   margin-bottom: 0;
 }
 
+.trending {
+  grid-area: trend;
+}
+
+.trending .cards {
+  background-color: #fff;
+  padding: 20px 20px 0px 20px;
+  border-radius: 8px;
+  box-shadow: 2px 3px 5px lightgray;
+}
+
 .trending .card {
   display: flex;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+.trending .card .id {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+
+.trending .card .about {
+  color: #919191;
+  font-size: 0.9rem;
+}
+
+.trending .card img {
+  width: 40px;
 }
