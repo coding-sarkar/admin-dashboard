@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  font-family: "Roboto", system-ui, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -73,6 +74,32 @@ table {
 
 .sidebar {
   grid-area: sidebar;
+  background: #0369a1;
+  color: #f0f9ff;
+  padding: 15px;
+}
+
+.sidebar h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.sidebar li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  font-weight: bold;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: large;
+}
+
+.sidebar li img {
+  margin-right: 20px;
+}
+
+.sidebar .nav {
+  margin-bottom: 50px;
 }
 
 main {
@@ -110,4 +137,9 @@ main {
 
 .card .icons {
   justify-self: end;
+}
+
+.top-header .search {
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
