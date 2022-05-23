@@ -290,9 +290,9 @@ main {
   grid-area: main;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  padding: 30px 40px 75px 30px;
+  padding: 30px 30px 75px 15px;
   background-color: #e2e8f0;
-  column-gap: 30px;
+  column-gap: 20px;
 }
 
 main h2, main h3 {
@@ -307,7 +307,7 @@ main h2 {
 .projects .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px
+  gap: 20px
 }
 
 .projects .card {
@@ -316,7 +316,7 @@ main h2 {
   padding: 25px 20px;
   border-radius: 0.5em;
   border-left: 8px solid #f0b429;
-  box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.35);
+  box-shadow: 2px 3px 5px lightgray;
 }
 
 .projects .card p {
@@ -330,6 +330,39 @@ main h2 {
   justify-self: end;
   display: flex;
   column-gap: 20px;
+}
+
+.anouncements .cards {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 2px 3px 5px lightgray;
+}
+
+.anouncements .card {
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 20px;
+}
+
+.anouncements h3 {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.anouncements p {
+  color: #919191;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.anouncements .last-one {
+  margin-bottom: 0;
+  border: none;
+}
+
+.anouncements .last-one p {
+  margin-bottom: 0;
 }
 
 .trending .card {
