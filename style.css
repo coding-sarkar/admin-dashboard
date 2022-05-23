@@ -153,6 +153,7 @@ table {
   grid-template-areas:
     "sidebar header"
     "sidebar main"
+    "sidebar ..."
 }
 
 
@@ -161,8 +162,9 @@ table {
 .header {
   grid-area: header;
   padding: 20px 40px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   box-shadow: -3px 6px 5px -3px rgba(77, 77, 77, 0.54);
+  z-index: 1;
 }
 
 .header .top-header {
@@ -247,6 +249,7 @@ table {
   column-gap: 20px;
 }
 
+
 /* Sidebar Styling */
 
 .sidebar {
@@ -283,25 +286,52 @@ table {
 
 /* Main content styling? */
 
-/* main {
+main {
   grid-area: main;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  padding: 30px 40px 75px 30px;
+  background-color: #e2e8f0;
+  column-gap: 30px;
 }
 
-.trending .card {
-  display: flex;
+main h2, main h3 {
+  font-weight: bold;
+}
+
+main h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .projects .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 25px
 }
 
 .projects .card {
   display: grid;
-} */
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 0.5em;
+  border-left: 8px solid #f0b429;
+  box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.35);
+}
+
+.projects .card p {
+  color: #919191;
+  font-size: 0.9rem;
+  margin-top: 7px;
+}
 
 .card .icons {
+  margin-top: 1rem;
   justify-self: end;
+  display: flex;
+  column-gap: 20px;
+}
+
+.trending .card {
+  display: flex;
 }
